@@ -75,62 +75,6 @@
             border-radius: 2px;
         }
 
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-bottom: 60px;
-        }
-
-        .card {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
-            border: 1px solid #e2e8f0;
-            transition: transform 0.2s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .card h3 {
-            margin-bottom: 15px;
-            color: var(--primary-dark);
-        }
-
-        .price-badge {
-            display: inline-block;
-            background: #f5f3ff;
-            color: var(--primary-dark);
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-weight: bold;
-            font-size: 1.1rem;
-            margin-bottom: 15px;
-        }
-
-        .card ul {
-            list-style: none;
-            color: var(--gray);
-            font-size: 0.95rem;
-        }
-
-        .card ul li {
-            margin-bottom: 8px;
-            position: relative;
-            padding-left: 20px;
-        }
-
-        .card ul li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: #22c55e;
-            font-weight: bold;
-        }
-
         .contact-section {
             background: white;
             padding: 40px;
@@ -138,6 +82,7 @@
             text-align: center;
             box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
             border: 1px solid #e2e8f0;
+            margin-top: 40px;
         }
 
         .btn {
@@ -145,7 +90,6 @@
             background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
             color: white;
             padding: 12px 30px;
-            text-radius: 8px;
             text-decoration: none;
             font-weight: bold;
             border-radius: 8px;
@@ -187,96 +131,94 @@
 
     <div class="container">
         
-        <h2>Unsere Festpreis-Angebote</h2>
         <!-- Preise & Leistungen Section -->
-<section style="padding: 60px 20px; background-color: #12121f; color: #ffffff; text-align: center; font-family: 'Segoe UI', Roboto, sans-serif;">
-    <div style="max-width: 900px; margin: 0 auto;">
-        
-        <h2 style="color: #9d4edd; font-size: 2.5rem; margin-bottom: 10px; font-weight: 700;">Transparente & faire Konditionen</h2>
-        <p style="color: #b5b5d6; font-size: 1.1rem; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">
-            Bei WebKraft Medien gibt es keine versteckten Kosten oder Knebelverträge. Sie zahlen nur das, was Sie wirklich brauchen – investieren Sie clever in Ihren digitalen Erfolg.
-        </p>
+        <section style="padding: 40px 20px; background-color: #12121f; color: #ffffff; text-align: center; font-family: 'Segoe UI', Roboto, sans-serif; border-radius: 16px; margin-bottom: 40px;">
+            <div style="max-width: 900px; margin: 0 auto;">
+                
+                <h2 style="color: #9d4edd; font-size: 2.5rem; margin-bottom: 10px; font-weight: 700;">Transparente & faire Konditionen</h2>
+                <p style="color: #b5b5d6; font-size: 1.1rem; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Bei WebKraft Medien gibt es keine versteckten Kosten oder Knebelverträge. Sie zahlen nur das, was Sie wirklich brauchen – investieren Sie clever in Ihren digitalen Erfolg.
+                </p>
 
-        <!-- HAUPTPRODUKT: FESTPREIS -->
-        <div style="background: linear-gradient(145deg, #1e1e30, #25253d); padding: 40px; border-radius: 16px; border: 1px solid #3f3f5c; box-shadow: 0 10px 30px rgba(0,0,0,0.5); margin-bottom: 30px; text-align: left;">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 20px;">
-                <div>
-                    <span style="background-color: #9d4edd; color: white; padding: 6px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">Rundum-Sorglos-Paket</span>
-                    <h3 style="font-size: 1.8rem; margin: 15px 0 10px 0; color: #ffffff;">Professionelle Weboptimierung</h3>
-                    <p style="color: #a2a2c2; margin-bottom: 25px; max-width: 500px; line-height: 1.5;">
-                        Ihre schlüsselfertige, moderne Website. Perfekt optimiert für Google, blitzschnell geladen und rechtssicher für Ihr Unternehmen aufbereitet.
-                    </p>
+                <!-- HAUPTPRODUKT: FESTPREIS -->
+                <div style="background: linear-gradient(145deg, #1e1e30, #25253d); padding: 40px; border-radius: 16px; border: 1px solid #3f3f5c; box-shadow: 0 10px 30px rgba(0,0,0,0.5); margin-bottom: 30px; text-align: left;">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 20px;">
+                        <div>
+                            <span style="background-color: #9d4edd; color: white; padding: 6px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">Rundum-Sorglos-Paket</span>
+                            <h3 style="font-size: 1.8rem; margin: 15px 0 10px 0; color: #ffffff;">Professionelle Weboptimierung</h3>
+                            <p style="color: #a2a2c2; margin-bottom: 25px; max-width: 500px; line-height: 1.5;">
+                                Ihre schlüsselfertige, moderne Website. Perfekt optimiert für Google, blitzschnell geladen und rechtssicher für Ihr Unternehmen aufbereitet.
+                            </p>
+                        </div>
+                        <div style="text-align: right; min-width: 200px;">
+                            <div style="font-size: 3.5rem; font-weight: 800; color: #00f5d4; line-height: 1;">350€</div>
+                            <div style="font-size: 1rem; color: #9d4edd; font-weight: 600; margin-top: 5px; text-transform: uppercase;">Garantierter Festpreis</div>
+                        </div>
+                    </div>
+
+                    <h4 style="color: #ffffff; font-size: 1.1rem; margin-bottom: 15px; border-bottom: 1px solid #3f3f5c; padding-bottom: 10px;">Was im Festpreis alles komplett enthalten ist:</h4>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; color: #b5b5d6; font-size: 0.95rem;">
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <span style="color: #00f5d4; font-weight: bold;">✓</span> Individuelles, modernes Premium-Design
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <span style="color: #00f5d4; font-weight: bold;">✓</span> Volle Optimierung für Smartphones & Tablets
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <span style="color: #00f5d4; font-weight: bold;">✓</span> Basis-SEO (Damit Sie bei Google gefunden werden)
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <span style="color: #00f5d4; font-weight: bold;">✓</span> DSGVO-konforme Einbindung (Impressum/Datenschutz)
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <span style="color: #00f5d4; font-weight: bold;">✓</span> Blitzschnelle Ladezeiten & saubere Programmierung
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <span style="color: #00f5d4; font-weight: bold;">✓</span> Sicheres Hosting auf GitHub Pages inklusive
+                        </div>
+                    </div>
                 </div>
-                <div style="text-align: right; min-width: 200px;">
-                    <div style="font-size: 3.5rem; font-weight: 800; color: #00f5d4; line-height: 1;">350€</div>
-                    <div style="font-size: 1rem; color: #9d4edd; font-weight: 600; margin-top: 5px; text-transform: uppercase;">Garantierter Festpreis</div>
+
+                <!-- ZUSATZLEISTUNGEN -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                    
+                    <!-- Erweiterung -->
+                    <div style="background-color: #1e1e30; padding: 25px; border-radius: 12px; border: 1px solid #2a2a40; text-align: left; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <h4 style="color: #ffffff; font-size: 1.2rem; margin-top: 0; margin-bottom: 8px;">Zusätzliche Unterseite</h4>
+                            <p style="color: #a2a2c2; font-size: 0.9rem; line-height: 1.4; margin-bottom: 20px;">
+                                Ihr Business wächst? Wir erweitern Ihre bestehende Website um eine komplett neue, voll designte Inhaltsseite (z. B. für eine neue Dienstleistung oder Galerie).
+                            </p>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #2a2a40; padding-top: 15px;">
+                            <span style="color: #b5b5d6; font-size: 0.9rem;">Pro zusätzliche Seite</span>
+                            <strong style="color: #00f5d4; font-size: 1.4rem;">149€</strong>
+                        </div>
+                    </div>
+
+                    <!-- Änderungen -->
+                    <div style="background-color: #1e1e30; padding: 25px; border-radius: 12px; border: 1px solid #2a2a40; text-align: left; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <h4 style="color: #ffffff; font-size: 1.2rem; margin-top: 0; margin-bottom: 8px;">Änderungen & Folgeprojekte</h4>
+                            <p style="color: #a2a2c2; font-size: 0.9rem; line-height: 1.4; margin-bottom: 20px;">
+                                Maximale Flexibilität für die Zukunft. Egal ob Textanpassungen, neue Bilder, Telefonnummern-Wechsel oder kleinere Aktualisierungen nach dem Start.
+                            </p>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #2a2a40; padding-top: 15px;">
+                            <span style="color: #b5b5d6; font-size: 0.9rem;">Pauschal pro Auftrag</span>
+                            <strong style="color: #00f5d4; font-size: 1.4rem;">49€</strong>
+                        </div>
+                    </div>
+
                 </div>
+
             </div>
-
-            <h4 style="color: #ffffff; font-size: 1.1rem; margin-bottom: 15px; border-bottom: 1px solid #3f3f5c; padding-bottom: 10px;">Was im Festpreis alles komplett enthalten ist:</h4>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; color: #b5b5d6; font-size: 0.95rem;">
-                <div style="display: flex; align-items: center; gap: 10px;">
-                    <span style="color: #00f5d4; font-weight: bold;">✓</span> Individuelles, modernes Premium-Design
-                </div>
-                <div style="display: flex; align-items: center; gap: 10px;">
-                    <span style="color: #00f5d4; font-weight: bold;">✓</span> Volle Optimierung für Smartphones & Tablets
-                </div>
-                <div style="display: flex; align-items: center; gap: 10px;">
-                    <span style="color: #00f5d4; font-weight: bold;">✓</span> Basis-SEO (Damit Sie bei Google gefunden werden)
-                </div>
-                <div style="display: flex; align-items: center; gap: 10px;">
-                    <span style="color: #00f5d4; font-weight: bold;">✓</span> DSGVO-konforme Einbindung (Impressum/Datenschutz)
-                </div>
-                <div style="display: flex; align-items: center; gap: 10px;">
-                    <span style="color: #00f5d4; font-weight: bold;">✓</span> Blitzschnelle Ladezeiten & saubere Programmierung
-                </div>
-                <div style="display: flex; align-items: center; gap: 10px;">
-                    <span style="color: #00f5d4; font-weight: bold;">✓</span> Sicheres Hosting auf GitHub Pages inklusive
-                </div>
-            </div>
-        </div>
-
-        <!-- ZUSATZLEISTUNGEN -->
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
-            
-            <!-- Erweiterung -->
-            <div style="background-color: #1e1e30; padding: 25px; border-radius: 12px; border: 1px solid #2a2a40; text-align: left; display: flex; flex-direction: column; justify-content: space-between;">
-                <div>
-                    <h4 style="color: #ffffff; font-size: 1.2rem; margin-top: 0; margin-bottom: 8px;">Zusätzliche Unterseite</h4>
-                    <p style="color: #a2a2c2; font-size: 0.9rem; line-height: 1.4; margin-bottom: 20px;">
-                        Ihr Business wächst? Wir erweitern Ihre bestehende Website um eine komplett neue, voll designte Inhaltsseite (z. B. für eine neue Dienstleistung oder Galerie).
-                    </p>
-                </div>
-                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #2a2a40; padding-top: 15px;">
-                    <span style="color: #b5b5d6; font-size: 0.9rem;">Pro zusätzliche Seite</span>
-                    <strong style="color: #00f5d4; font-size: 1.4rem;">149€</strong>
-                </div>
-            </div>
-
-            <!-- Änderungen -->
-            <div style="background-color: #1e1e30; padding: 25px; border-radius: 12px; border: 1px solid #2a2a40; text-align: left; display: flex; flex-direction: column; justify-content: space-between;">
-                <div>
-                    <h4 style="color: #ffffff; font-size: 1.2rem; margin-top: 0; margin-bottom: 8px;">Änderungen & Folgeprojekte</h4>
-                    <p style="color: #a2a2c2; font-size: 0.9rem; line-height: 1.4; margin-bottom: 20px;">
-                        Maximale Flexibilität für die Zukunft. Egal ob Textanpassungen, neue Bilder, Telefonnummern-Wechsel oder kleinere Aktualisierungen nach dem Start.
-                    </p>
-                </div>
-                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #2a2a40; padding-top: 15px;">
-                    <span style="color: #b5b5d6; font-size: 0.9rem;">Pauschal pro Auftrag</span>
-                    <strong style="color: #00f5d4; font-size: 1.4rem;">49€</strong>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-</section>
+        </section>
 
         <div class="contact-section" id="kontakt">
             <h2>Bereit für mehr Webkraft?</h2>
             <p>Haben Sie Fragen oder möchten Sie direkt starten? Schreiben Sie uns unkompliziert eine E-Mail. Wir melden uns innerhalb von 24 Stunden bei Ihnen.</p>
-            <!-- Ersetze 'DEINE_GMAIL_ADRESSE' durch deine echte WebKraft Gmail -->
             <a href="mailto:DEINE_GMAIL_ADRESSE@gmail.com" class="btn">E-Mail schreiben</a>
         </div>
 
