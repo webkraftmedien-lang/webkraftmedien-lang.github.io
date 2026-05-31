@@ -222,14 +222,63 @@
             </div>
         </section>
 
-        <div class="contact-section" id="kontakt">
-            <h2>Bereit für mehr Webkraft?</h2>
-            <p>Haben Sie Fragen oder möchten Sie direkt starten? Schreiben Sie uns unkompliziert eine E-Mail. Wir melden uns innerhalb von 24 Stunden bei Ihnen.</p>
-            <a href="mailto:DEINE_GMAIL_ADRESSE@gmail.com" class="btn">E-Mail schreiben</a>
+<!-- KONTAKT SEKTION NEU -->
+<section id="kontakt" style="padding: 60px 20px; background-color: #0b0f19; color: #ffffff; font-family: 'Segoe UI', sans-serif;">
+    <div style="max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 40px;">
+        
+        <!-- Linke Spalte: Das Formular -->
+        <div style="flex: 1; min-width: 300px; background-color: #141b2d; padding: 30px; border-radius: 8px; border: 1px solid #222f4d;">
+            <h2 style="color: #9d4edd; margin-bottom: 10px; font-size: 1.8rem;">Nachricht senden</h2>
+            <p style="color: #94a3b8; font-size: 0.95rem; margin-bottom: 20px;">Nutzen Sie einfach dieses Formular, ich melde mich blitzschnell bei Ihnen.</p>
+            
+            <form action="https://formsubmit.co/webkraftmedien@gmail.com" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_next" value="https://webkraftmedien-lang.github.io">
+                
+                <div>
+                    <label style="display: block; font-size: 0.85rem; color: #94a3b8; margin-bottom: 5px;">Ihr Name</label>
+                    <input type="text" name="name" required style="width: 100%; padding: 10px; background: #0f172a; border: 1px solid #334155; border-radius: 4px; color: #fff; font-size: 0.95rem;">
+                </div>
+                
+                <div>
+                    <label style="display: block; font-size: 0.85rem; color: #94a3b8; margin-bottom: 5px;">Ihre E-Mail-Adresse</label>
+                    <input type="email" name="email" required style="width: 100%; padding: 10px; background: #0f172a; border: 1px solid #334155; border-radius: 4px; color: #fff; font-size: 0.95rem;">
+                </div>
+                
+                <div>
+                    <label style="display: block; font-size: 0.85rem; color: #94a3b8; margin-bottom: 5px;">Ihre Nachricht</label>
+                    <textarea name="message" rows="4" required style="width: 100%; padding: 10px; background: #0f172a; border: 1px solid #334155; border-radius: 4px; color: #fff; font-size: 0.95rem; resize: vertical;"></textarea>
+                </div>
+                
+                <button type="submit" style="background: #9d4edd; color: #fff; border: none; padding: 12px; border-radius: 4px; font-weight: bold; cursor: pointer; font-size: 1rem; transition: background 0.2s;">Nachricht absenden ⚡️</button>
+            </form>
         </div>
-
+        
+        <!-- Rechte Spalte: Direkter Kontakt -->
+        <div style="flex: 1; min-width: 300px; display: flex; flex-direction: column; justify-content: center; padding: 20px;">
+            <h2 style="color: #ffffff; font-size: 2.2rem; margin-bottom: 15px;">Bereit für mehr WebKraft?</h2>
+            <p style="color: #94a3b8; font-size: 1.1rem; line-height: 1.6; margin-bottom: 30px;">
+                Haben Sie Fragen oder möchten Sie direkt starten? Wählen Sie ganz flexibel den Weg, der Ihnen am besten passt: Schreiben Sie mir direkt über das Formular oder nutzen Sie den klassischen E-Mail-Weg.
+            </p>
+            
+            <div style="display: flex; flex-direction: column; gap: 20px;">
+                <div>
+                    <h4 style="color: #9d4edd; margin: 0 0 5px 0; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Direkt anrufen</h4>
+                    <a href="tel:015151843235" style="color: #ffffff; font-size: 1.2rem; text-decoration: none; font-weight: bold;">0151 51843235</a>
+                </div>
+                <div>
+                    <h4 style="color: #9d4edd; margin: 0 0 5px 0; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">E-Mail schreiben</h4>
+                    <a href="mailto:webkraftmedien@gmail.com" style="display: inline-block; background-color: transparent; border: 2px solid #9d4edd; color: #ffffff; padding: 10px 20px; border-radius: 4px; text-decoration: none; font-weight: bold; transition: all 0.2s;">
+                        webkraftmedien@gmail.com ⚡️
+                    </a>
+                </div>
+            </div>
+        </div>
+        
     </div>
-     <!-- IMPRESSUM & DATENSCHUTZ SEKTION -->
+</section>
+
+<!-- IMPRESSUM & DATENSCHUTZ SEKTION -->
 <section id="rechtliches" style="padding: 40px 20px; background-color: #0f172a; color: #ffffff; font-family: 'Segoe UI', sans-serif; border-top: 2px solid var(--primary);">
     <div style="max-width: 900px; margin: 0 auto; line-height: 1.6; font-size: 0.9rem;">
         
@@ -274,4 +323,4 @@
 </footer>
 
 </body>
-</html> 
+</html>
